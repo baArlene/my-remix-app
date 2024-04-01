@@ -12,7 +12,7 @@ import {
 } from "@remix-run/react";
 
 import appStylesHref from "./app.css?url";
-import { getContacts } from "./data";
+import { getContacts } from "./data.server";
 
 export async function loader() {
   const contacts = await getContacts()
